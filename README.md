@@ -163,3 +163,9 @@ EFI/OC/
 ## 免责声明
 
 仅供学习交流，请自行承担使用风险。请勿用于商业用途。使用前请阅读 [Apple EULA 与 Hackintosh 相关法律讨论](https://dortania.github.io/OpenCore-Install-Guide/)。
+
+---
+
+## 关键词 / Keywords
+
+`hackintosh` `黑苹果` `黑果装机` `OpenCore` `OpenCore EFI` `hackintosh efi` `Lenovo ThinkPad E14` `ThinkPad E14 hackintosh` `E14 Gen1` `i7-10710U` `i5-10210U` `Comet Lake` `macOS Sequoia` `macOS 15.8` `Sonoma` `DW1560` `DW1560 hackintosh` `BCM94352Z` `BCM4352` `BCM20702` `Broadcom WiFi` `博通网卡` `换网卡` `睡眠唤醒失败` `sleep wake not working` `AirPortBrcmNIC` `BrcmPatchRAM` `BlueToolFixup`
