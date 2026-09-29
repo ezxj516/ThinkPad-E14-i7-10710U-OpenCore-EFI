@@ -17,7 +17,7 @@
 | 独显 | AMD Polaris 12 (0x6987) | ⛔ 无驱动，已用 `-wegnoegpu` 屏蔽省电 |
 | 内存 | 32GB DDR4 | ✅ About 正确识别 |
 | 硬盘 | KIOXIA 1TB NVMe | ✅ 原生 NVMe + TRIM |
-| **无线网卡** | **Dell DW1560（BCM94352Z，BCM4352 + BCM20702）** | ✅ **原机 AX210 已换为此卡** |
+| **无线网卡** | **Dell DW1560（BCM94352Z，BCM4352 + BCM20702）** | ✅ 原机 Realtek 螃蟹卡 → AX210 → **现役 DW1560** |
 | 声卡 | Conexant CX8070/CX11880 (layout-id 15) | ✅ 扬声器 + 内置麦克风 |
 | 有线 | Realtek RTL8168/8111 | ✅ |
 | 键盘/触控板 | PS/2 | ✅ VoodooPS2 |
@@ -55,9 +55,11 @@
 
 ---
 
-## 🔁 网卡更换说明：Intel AX210 → Dell DW1560（重点）
+## 🔁 网卡更换说明：Realtek 螃蟹卡 → AX210 → DW1560（重点）
 
-原机自带 **Intel AX210**，实测在 macOS Sequoia 上：Wi-Fi 只能用 itlwm + HeliPort（无原生菜单、无 AirDrop），**蓝牙完全无法驱动**（IntelBluetoothFirmware 2.4.0 + IntelBTPatcher + BlueToolFixup 全上后 bluetoothd 仍以 STATUS 718 无限崩溃，A/B 对照确认）。
+本机网卡换过两轮：**原机为 Realtek 螃蟹卡**（macOS 下基本无解）→ 换 **Intel AX210** → 最终换 **Dell DW1560**。
+
+**AX210 阶段的实测结论**（供还在用 AX210 的朋友参考）：Wi-Fi 只能用 itlwm + HeliPort（无原生菜单、无 AirDrop），**蓝牙完全无法驱动**（IntelBluetoothFirmware 2.4.0 + IntelBTPatcher + BlueToolFixup 全上后 bluetoothd 仍以 STATUS 718 无限崩溃，A/B 对照确认）。
 
 **更换为 DW1560（BCM94352Z，M.2 2230）后 Wi-Fi + 蓝牙全部原生驱动**，且**实测不需要 OCLP root patch**（系统卷保持封印）。
 
