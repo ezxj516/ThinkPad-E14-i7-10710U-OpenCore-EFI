@@ -1,4 +1,4 @@
-# Lenovo ThinkPad E14 (i5-10210U) Hackintosh EFI — macOS Sequoia 15.8 · OpenCore 1.0.7 · DW1560
+# Lenovo ThinkPad E14 (i7-10710U) Hackintosh EFI — macOS Sequoia 15.8 · OpenCore 1.0.7 · DW1560
 
 > **联想 ThinkPad E14（Comet Lake）黑苹果 EFI 分享**
 > ✅ Wi-Fi / 蓝牙已通过更换 **DW1560** 网卡完整驱动
@@ -12,7 +12,7 @@
 | 项目 | 型号 | 状态 |
 |---|---|---|
 | 机型 | 联想 ThinkPad E14（Comet Lake 平台） | — |
-| CPU | Intel Core i5-10210U（Comet Lake，15W） | ✅ 变频正常（睿频 2.7GHz+，15W 功耗墙行为正常） |
+| CPU | Intel Core i7-10710U（6 核 12 线程，15W） | ✅ 变频正常（睿频 2.7GHz+，15W 功耗墙行为正常） |
 | 核显 | Intel UHD Graphics (CFL, 0x3E9B) | ✅ Metal 3 硬件加速 |
 | 独显 | AMD Polaris 12 (0x6987) | ⛔ 无驱动，已用 `-wegnoegpu` 屏蔽省电 |
 | 内存 | 32GB DDR4 | ✅ About 正确识别 |
@@ -23,7 +23,7 @@
 | 键盘/触控板 | PS/2 | ✅ VoodooPS2 |
 | 电池/亮度/摄像头/USB | EC / PNLF / USB 映射 | ✅ |
 
-> 📝 **CPU 型号备注**：本机按购机型号记录为 i5-10210U；但 CPUID 实测为 6 核 12 线程、最大睿频比 47（4.7GHz）、基频 1.1GHz，与 i7-10710U 规格一致（OpenCore 默认不伪造这些值）。同型号 E14 可能存在不同 CPU 配置，同类机器请以自己 CPUID 实测为准——本 EFI 的电源管理对两者均适用（同为 Comet Lake U 系列）。
+> 📝 **CPU 型号备注**：E14 同机型存在不同 CPU 配置（i5-10210U / i7-10510U / i7-10710U 等）。本机 CPUID 实测为 6 核 12 线程、最大睿频 4.7GHz、基频 1.1GHz，即 i7-10710U。本 EFI 的电源管理对所有 Comet Lake U 系列均适用。
 
 **系统版本**：macOS Sequoia 15.8 (24H23)
 **OpenCore**：1.0.7（图形界面 OpenCanopy 已启用）
